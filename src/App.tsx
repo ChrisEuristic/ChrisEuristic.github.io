@@ -6,13 +6,22 @@ import styles from "./App.module.css";
 import { useRef, useState } from "react";
 
 function App() {
-  const text = `#타이틀`;
+  const text = `
+  # H1 타이틀
+  ## H2 타이틀
+  ### H3 타이틀
+  #### H4 타이틀
+  ##### H5 타이틀
+  ###### H6 타이틀
+  \`\`\`toString()\`\`\`
+  `;
   const [result, setResult] = useState(marked(text));
 
   return (
     <main className={styles.App}>
       <header>Chris's Devlog</header>
-      <article>{result}</article>
+      <article dangerouslySetInnerHTML={{__html: result}}></article>
+      <footer>toString()</footer>
       <footer>VS Code</footer>
       <footer>TS</footer>
       <footer>React</footer>
