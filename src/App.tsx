@@ -1,5 +1,5 @@
 // utils
-import marked from "marked";
+import { marked } from "marked";
 
 // styles
 import styles from "./App.module.css";
@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 
 function App() {
   const text = `#타이틀`;
-  const [result, setResult] = useState(marked.marked(text));
+  const [result, setResult] = useState(marked(text));
 
   return (
     <main className={styles.App}>
