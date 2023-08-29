@@ -1,0 +1,12 @@
+.main {
+  margin-left: 6rem;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  color: var(--concept-color-reverse);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 1rem;
+}

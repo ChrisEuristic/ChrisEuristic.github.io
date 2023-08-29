@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.outterSection {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  display: grid;
+}
